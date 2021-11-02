@@ -10,7 +10,7 @@ public class PersonDetail {
     private String phoneNumber;
     private String email;
 
-    public PersonDetail(String firstName, String lastName, String address, String city, String state, String zipCode, String phoneNumber, String email) {
+    public PersonDetail(String firstName, String lastName, String address, String city, String state, String zipCode, String phoneNumber,  String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -91,4 +91,5 @@ public class PersonDetail {
                 + ", state=" + state + ", zipCode=" + zipCode + ", phoneNumber=" + phoneNumber + ", email=" + email
                 + "]";
     }
+
 }

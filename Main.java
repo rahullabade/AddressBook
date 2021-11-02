@@ -20,7 +20,6 @@ public class Main {
 
     public static void main(String[] args) {
         AddDetails addPersonDetail = new AddDetails();
-        // we use while loop
         menu = choice();
         while (menu != 0) {
             if (menu > 1)
@@ -56,6 +55,10 @@ public class Main {
                 case 2:
                     System.out.println("Enter First Name of contact that you would like to edit: ");
                     addPersonDetail.editContact(contact);
+                    break;
+
+                case 3:
+                    addPersonDetail.deleteContact(contact);
                     break;
 
                 default:

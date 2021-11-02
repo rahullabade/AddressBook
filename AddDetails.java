@@ -75,4 +75,16 @@ public class AddDetails {
             }
         }
     }
+    // Delete method use to delete the data.
+    public void deleteContact(ArrayList<PersonDetail> contatctDetails) {
+        System.out.println("Enter The Name");
+        String data = scanDetails.nextLine();
+        for (int i = 0; i < contatctDetails.size(); i++) {
+            if (contatctDetails.get(i).getFirstName().equals(data)) {
+                contatctDetails.remove(i);
+
+            } else
+                System.out.println("not match any details");
+        }
+    }
 }
